@@ -32,14 +32,10 @@ lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>%
 # t-test that compares all manufacturing lots against mean PSI of the population
 # three t-tests that compare each manufacturing lot against mean PSI of the population
 
+# Create 4 data sets for t.test: sample,Lot1,Lot2,Lot3
 sample_suspension_coil <- suspension_coil %>% sample_n(50) #generate 50 randomly sampled data points
-lot1_suspension_coil <- subset(suspension_coil, Manufacturing_Lot == "Lot1") 
-lot2_suspension_coil <- subset(suspension_coil, Manufacturing_Lot == "Lot2") 
-lot3_suspension_coil <- subset(suspension_coil, Manufacturing_Lot == "Lot3") 
 
-
-t.test(sample_suspension_coil$PSI, mu=mean(suspension_coil$PSI)) #compare sample versus population means
-t.test(lot1_suspension_coil$PSI, mu=mean(suspension_coil$PSI)) #compare Lot1 versus population means
-t.test(lot2_suspension_coil$PSI, mu=mean(suspension_coil$PSI)) #compare Lot2 versus population means
-t.test(lot3_suspension_coil$PSI, mu=mean(suspension_coil$PSI)) #compare Lot3 versus population means
-
+t.test(sample_suspension_coil$PSI, mu=mean(suspension_coil$PSI)) #compare sample versus population mean
+t.test(subset(suspension_coil, Manufacturing_Lot == "Lot1")$PSI, mu=mean(suspension_coil$PSI)) #compare Lot1 versus population mean
+t.test(subset(suspension_coil, Manufacturing_Lot == "Lot2")$PSI, mu=mean(suspension_coil$PSI)) #compare Lot2 versus population mean
+t.test(subset(suspension_coil, Manufacturing_Lot == "Lot3")$PSI, mu=mean(suspension_coil$PSI)) #compare Lot3 versus population mean

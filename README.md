@@ -47,18 +47,17 @@ However, with a variance of 170.2861224, manufacturing lot #3 does not meet this
 
 ### 3. T-Tests on Suspension Coils
 
-Briefly summarize your interpretation and findings for the t-test results. 
+T-Tests were run to determine the difference in the mean of PSI of the total population of suspension coils versus 4 subsets of the population: a random sample of 50, Lot1, Lot2, Lot3.
 
-Include screenshots of the t-test to support your summary.
+The p-values created from each test were compared to .05 percent to test the two Hypotheses below.
 
-An RScript is written for t-test that compares all manufacturing lots against mean PSI of the population (5 pt)
-An RScript is written for three t-tests that compare each manufacturing lot against mean PSI of the population (10 pt)
-There is a summary of the t-test results across all manufacturing lots and for each lot (5 pt)
-
+Null Hypothesis or H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
+Ha Hypothesis: There is a statistical difference between the observed sample mean and its presumed population mean.
 
 <img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/ttest.png" width = "800" >
 
 
+In summary, the sample and Lot 3 showed no statistical difference between their means and the population mean whereas Lots 1 and 2 showed a significant statistical differences with p values well below .05.
 
 
 
@@ -72,3 +71,10 @@ In your description, address the following questions:
 - What is the null hypothesis or alternative hypothesis?
 - What statistical test would you use to test the hypothesis? And why?
 - What data is needed to run the statistical test?
+
+
+he statistical study design has the following:
+A metric to be tested is mentioned 
+A null hypothesis or an alternative hypothesis is described 
+A statistical test is described to test the hypothesis 
+The data for the statistical test is described 

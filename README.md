@@ -5,6 +5,8 @@ by Bob Ciminera
 
 AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress.  AutosRUs’ upper management has called on the data analytics team to review the production data for insights that may help the manufacturing team.
 
+In addition, other areas were addressed such as fuel efficiency and design of a future statistical study.
+
 Using the R Studio open source statistical tool, the goals of the analysis are as follow:
 
 1. Linear Regression to Predict MPG
@@ -22,13 +24,13 @@ A multiple linear regression analysis was performed to identify which variables 
 
 <img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/mpg_lm.png" width = "500" >
 
-The results of the linear regression suggest that the values of Pr((>ltl) represent the probability that the coefficients for vehicle_weight, spoiler_angle, and AWD provide a non-random amount of variance to the mpg values. These, therefore have a significant impact of mpg values whereas the other variables do not.
+The results of the linear regression show that the values of Pr((>ltl) represent the probability that the coefficients for vehicle_weight, spoiler_angle, and AWD provide a non-random amount of variance to the mpg values. These, therefore have a significant impact of mpg values whereas the other variables do not.
 
-From the linear regression model, the r-squared value is 0.7149, which means that roughly 71% of the variablilty of our dependent variable (miles per gallon) is explained using this linear model. C
+From the linear regression model, the r-squared value is 0.7149, which means that 71% of the variabilty of our dependent variable (miles per gallon) can be explained using this linear model. 
 
-In addition, the p-value of our linear regression analysis is 5.35 x 10^-11, which is much smaller than our assumed significance level of 0.05%. Therefore, we can state that there is sufficient evidence to reject the null hypothesis that the slope of our linear model is not zero.
+In addition, the p-value of our linear regression analysis is 5.35 x 10^-11, which is much smaller than our assumed significance level of 0.05%. Therefore, we can state that there is sufficient evidence to that the slope of our linear model is not zero.
 
-Based on the above this linear model effectively predicts mpg of MechaCar prototypes effectively.  In summary, the high R squared values and the significant impact of vehicle_weight, spoiler_angle and AWD on mpg make this an effective model.  By scaling or transforming these variables, this model can become even more effective.
+Based on the above, this linear model effectively predicts mpg of MechaCar prototypes.  The high R squared values and the significant impact of vehicle_weight, spoiler_angle and AWD on mpg make this an effective model.  By scaling or transforming these variables, this model can become even more effective.
 
 
 ### 2. Summary Statistics on Suspension Coils
@@ -57,24 +59,38 @@ Ha Hypothesis: There is a statistical difference between the observed sample mea
 <img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/ttest.png" width = "800" >
 
 
+#### Suspension Coil Statistical Summary
+
 In summary, the sample and Lot 3 showed no statistical difference between their means and the population mean thus proving the null hypothesis.  However, Lots 1 and 2 showed a significant statistical differences with p values well below .05, thus supporting the alternative hypothesis.
 
+What is of concern is that while lot 3 was the only lot that met the null hypothesis, it also was the lot that had a variance that was out of spec.
+
+In order to maintain the quality of the mecha car according to specifications.  The supplier of these coils should be put on notice to fix the quality issue and AutoRUs should institute incoming inspection on incoming suspension coils until supplier can prove that their process is producing consistently to specification.
 
 
-### 4. Study Design: MechaCar vs Competition.
-Short description of a statistical study that can quantify how the MechaCar performs against the competition. 
+### 4. Study Design: MechaCar vs Competition
 
-In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+In order to understand how MechaCar performs against the competition a statistical study could be conducted with critical metrics that would be of interest to a consumer.  A few examples of these metrics are: cost, fuel efficiency, horse power, maintenance cost, or safety rating.
 
-In your description, address the following questions:
--  What metric or metrics are you going to test?
-- What is the null hypothesis or alternative hypothesis?
-- What statistical test would you use to test the hypothesis? And why?
-- What data is needed to run the statistical test?
+For this study, the recommended variable of interest is mpg as a measure of mpg.
 
+The Null Hypothesis is that the mpg for the competition is the same as that of the MechaCar.
 
-he statistical study design has the following:
-A metric to be tested is mentioned 
-A null hypothesis or an alternative hypothesis is described 
-A statistical test is described to test the hypothesis 
-The data for the statistical test is described 
+The Alternative Hypothesis is that the mpg for the competition is significantly different than Mechacar.
+
+In this study mpg be tested for each competitor with sample sizes of 50 for each.  Each car would be driven the same number of miles under the same highway and city driving conditions and fuel consumption would be careful,y measured directly from the fuel tanks before and after each test to avoid bias introduced by fuel gauges.
+
+To compare the statistical difference between the distribution means of mpg from each of these samples, the ANOVA test methodology will be used.   
+
+An additional study is recommended to test the independent factors that might impact mpg.
+
+In this study 6 variables would be tested for each competitor with sample sizes of 50 for each.  Each car would be driven the same number of miles under the same highway and city driving conditions and fuel consumption would be careful,y measured directly from the fuel tanks before and after each test to avoid bias introduced by fuel gauges.
+
+These variables would include vehicle length, weight, ground clearance, spolier angle, AWD, and mpg.  Measurements would be taken for each of these across 50 samples.
+
+The null hypothesis is that none of these variables has significance on mpg whereas the alternative hypothesis is that one or more of these variables does have significance.
+
+A sample of 50 cars currently in production will be taken from each competitor with measurments taken for each of the variables.
+
+ A multiple linear regression test will be conducted for the entire population of cars in the study. We already know that ehicle_weight, spoiler_angle and AWD were of signifcance in predicting mpg for the MechaCar. 
+

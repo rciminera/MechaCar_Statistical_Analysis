@@ -14,7 +14,7 @@ Using the R Studio open source statistical tool, the goals of the analysis are a
 
 A multiple linear regression analysis was performed to identify which variables in the dataset predict the mpg of MechaCar prototypes.
 
-[githublogo](mpg.lm.png)
+<img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/mpg_lm.png" width = "500" >
 
 The results of the linear regression suggest that vehicle_weight, spoiler_angle, and AWD provide a non-random amount of variance to the mpg values and are therefore predictors of mpg values.
 
@@ -30,7 +30,7 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 The current manufacturing data indicates that the suspension coils meet this design specification in total across all manufacturing lots with a variance of 62.29356.
 
-<img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/total_summary.png" width = "800" >
+<img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/total_summary.png" width = "500" >
 
 
 However, with a variance of 170.2861224, manufacturing lot #3 does not meet this spec.

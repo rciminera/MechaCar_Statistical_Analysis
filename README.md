@@ -63,9 +63,9 @@ Ha Hypothesis: There is a statistical difference between the observed sample mea
 
 In summary, the sample and Lot 3 showed no statistical difference between their means and the population mean thus proving the null hypothesis.  However, Lots 1 and 2 showed a significant statistical differences with p values well below .05, thus supporting the alternative hypothesis.
 
-What is of concern is that while lot 3 was the only lot that met the null hypothesis, it also was the lot that had a variance that was out of spec.
+What is of concern is that while lot 3 was the only lot that met the null hypothesis, the variance of lot 3 was out of spec.
 
-In order to maintain the quality of the mecha car according to specifications.  The supplier of these coils should be put on notice to fix the quality issue and AutoRUs should institute incoming inspection on incoming suspension coils until supplier can prove that their process is producing consistently to specification.
+In order to maintain the quality of the MechaCar according to its specifications, the supplier of these coils should be put on notice to fix the quality issue and put corrective and preventative measures in place.  AutoRUs should also institute incoming inspection on suspension coils as they are received until supplier can prove that their process is producing consistently to specification.
 
 
 ### 4. Study Design: MechaCar vs Competition
@@ -78,7 +78,7 @@ The Null Hypothesis is that the mpg for the competition is the same as that of t
 
 The Alternative Hypothesis is that the mpg for the competition is significantly different than Mechacar.
 
-In this study mpg be tested for each competitor with sample sizes of 50 for each.  Each car would be driven the same number of miles under the same highway and city driving conditions and fuel consumption would be careful,y measured directly from the fuel tanks before and after each test to avoid bias introduced by fuel gauges.
+In this study mpg be tested for each competitor with sample sizes of 50 for each.  Each car would be driven the same number of miles under the same highway and city driving conditions and fuel consumption would be carefully and accruately measured directly from the fuel tanks before and after each test to avoid bias introduced by fuel gauges.
 
 To compare the statistical difference between the distribution means of mpg from each of these samples, the ANOVA test methodology will be used.   
 

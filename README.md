@@ -56,7 +56,7 @@ An RScript is written for three t-tests that compare each manufacturing lot agai
 There is a summary of the t-test results across all manufacturing lots and for each lot (5 pt)
 
 
-<img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/tests.png" width = "800" >
+<img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/test.png" width = "800" >
 
 
 

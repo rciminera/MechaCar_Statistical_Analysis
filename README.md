@@ -19,11 +19,14 @@ A multiple linear regression analysis was performed to identify which variables 
 
 <img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/mpg_lm.png" width = "500" >
 
-The results of the linear regression suggest that vehicle_weight, spoiler_angle, and AWD provide a non-random amount of variance to the mpg values and are therefore predictors of mpg values.
+The results of the linear regression suggest that the values of Pr((>ltl) represent the probability that the coefficients for vehicle_weight, spoiler_angle, and AWD provide a non-random amount of variance to the mpg values. These, therefore have a significant impact of mpg values whereas the other variables do not.
 
-The slope of the linear model is not equal to zero with 
-Is the slope of the linear model considered to be zero? Why or why not?
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+From the linear regression model, the r-squared value is 0.7149, which means that roughly 71% of the variablilty of our dependent variable (miles per gallon) is explained using this linear model. C
+
+In addition, the p-value of our linear regression analysis is 5.35 x 10^-11, which is much smaller than our assumed significance level of 0.05%. Therefore, we can state that there is sufficient evidence to reject the null hypothesis that the slope of our linear model is not zero.
+
+Based on the above this linear model effectively predicts mpg of MechaCar prototypes effectively.  In summary, the high R squared values and the significant impact of vehicle_weight, spoiler_angle and AWD on mpg make this an effective model.  By scaling or transforming these variables, this model can become even more effective.
+
 
 
 

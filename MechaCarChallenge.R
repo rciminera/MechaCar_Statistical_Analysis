@@ -10,7 +10,7 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar_mpg)) #generate multiple linear regression model
 
 
-#Deliverable 2: Create Visualizations for the Trip Analysis
+#Deliverable 2: 
 
 # Read MechaCar csv into dataframe
 suspension_coil = read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
@@ -18,7 +18,7 @@ suspension_coil = read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFac
 # Create a total_summary dataframe using the summarize() function to get the 
 # mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 
-Total_summary <- suspension_coil %>% 
+total_summary <- suspension_coil %>% 
   summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
 
 # Write an RScript that creates a lot_summary dataframe using the group_by() and the 
@@ -26,6 +26,6 @@ Total_summary <- suspension_coil %>%
 # and standard deviation of the suspension coil’s PSI column.
 
 lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% 
-  summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), .groups = 'keep')
+  summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
 
 

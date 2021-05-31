@@ -12,7 +12,7 @@ Using the R Studio open source statistical tool, the goals of the analysis are a
 3. T-Test on Suspension Coils
 4. Design a Study Comparing the MechaCar to the Competition
 
-(This is the link to the RScript)[https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R]
+[This is the link to the RScript](https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R)
 
 
 

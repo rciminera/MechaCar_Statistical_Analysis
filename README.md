@@ -4,9 +4,9 @@ AutosRUs’ newest prototype, the MechaCar, is suffering from production trouble
 
 Using the R Studio open source statistical tool, the goals of the analysis are as follow:
 
-1. Linear Regression to Predict MPG: 
-2. Summary Statistics on Suspension Coils: 
-3. T-Test on Suspension Coils: determine if the manufacturing lots are statistically different from the mean population
+1. Linear Regression to Predict MPG
+2. Summary Statistics on Suspension Coils
+3. T-Test on Suspension Coils
 4. Design a Study Comparing the MechaCar to the Competition
 
 

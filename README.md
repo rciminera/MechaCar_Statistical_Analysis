@@ -12,6 +12,9 @@ Using the R Studio open source statistical tool, the goals of the analysis are a
 3. T-Test on Suspension Coils
 4. Design a Study Comparing the MechaCar to the Competition
 
+(This is the link to the RScript)[https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R]
+
+
 
 ### 1. Linear Regression to Predict MPG
 
@@ -26,8 +29,6 @@ From the linear regression model, the r-squared value is 0.7149, which means tha
 In addition, the p-value of our linear regression analysis is 5.35 x 10^-11, which is much smaller than our assumed significance level of 0.05%. Therefore, we can state that there is sufficient evidence to reject the null hypothesis that the slope of our linear model is not zero.
 
 Based on the above this linear model effectively predicts mpg of MechaCar prototypes effectively.  In summary, the high R squared values and the significant impact of vehicle_weight, spoiler_angle and AWD on mpg make this an effective model.  By scaling or transforming these variables, this model can become even more effective.
-
-
 
 
 ### 2. Summary Statistics on Suspension Coils
@@ -49,6 +50,17 @@ However, with a variance of 170.2861224, manufacturing lot #3 does not meet this
 Briefly summarize your interpretation and findings for the t-test results. 
 
 Include screenshots of the t-test to support your summary.
+
+An RScript is written for t-test that compares all manufacturing lots against mean PSI of the population (5 pt)
+An RScript is written for three t-tests that compare each manufacturing lot against mean PSI of the population (10 pt)
+There is a summary of the t-test results across all manufacturing lots and for each lot (5 pt)
+
+
+<img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/tests.png" width = "800" >
+
+
+
+
 
 ### 4. Study Design: MechaCar vs Competition.
 Short description of a statistical study that can quantify how the MechaCar performs against the competition. 

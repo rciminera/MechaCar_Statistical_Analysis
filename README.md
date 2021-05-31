@@ -92,5 +92,5 @@ The null hypothesis is that none of these variables has significance on mpg wher
 
 A sample of 50 cars currently in production will be taken from each competitor with measurments taken for each of the variables.
 
- A multiple linear regression test will be conducted for the entire population of cars in the study. We already know that ehicle_weight, spoiler_angle and AWD were of signifcance in predicting mpg for the MechaCar. 
+ A multiple linear regression test will be conducted for the entire population of cars in the study. We already know that vehicle_weight, spoiler_angle and AWD were of signifcance in predicting mpg for the MechaCar. From the new study we can confirm whether these variables remain signficant.  We can also transform or scale these to fine tune the model and impact mpg according to the marketing department's mpg objective vs the competition.
 

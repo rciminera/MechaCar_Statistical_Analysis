@@ -57,7 +57,7 @@ Ha Hypothesis: There is a statistical difference between the observed sample mea
 <img src="https://github.com/rciminera/MechaCar_Statistical_Analysis/blob/main/Screen_Shots/ttest.png" width = "800" >
 
 
-In summary, the sample and Lot 3 showed no statistical difference between their means and the population mean whereas Lots 1 and 2 showed a significant statistical differences with p values well below .05.
+In summary, the sample and Lot 3 showed no statistical difference between their means and the population mean thus proving the null hypothesis.  However, Lots 1 and 2 showed a significant statistical differences with p values well below .05, thus supporting the alternative hypothesis.
 
 
 
